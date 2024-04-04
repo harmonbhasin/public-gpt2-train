@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Package management
+uv.lock
+.python-version
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Outputs and logs
+outputs/
+wandb/
+*.log
+logs/
+
+# Model checkpoints
+*.pt
+*.pth
+*.ckpt
+checkpoints/
+
+# Temporary files
+tmp/
+temp/
+*.tmp

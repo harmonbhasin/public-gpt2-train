@@ -1,0 +1,26 @@
+# Model Architecture
+model:
+  name: gpt2
+  vocab_size: 50257
+  n_positions: 1024
+  n_embd: 768
+  n_layer: 12
+  n_head: 12
+  dropout: 0.1
+
+# Optimizer
+optimizer:
+  _target_: torch.optim.AdamW
+  lr: 3e-4
+  weight_decay: 0.01
+  betas: [0.9, 0.95]
+  eps: 1e-8
+
+scheduler:
+  enabled: false
+
+# Training Hyperparameters
+training:
+  batch_size: 4
+  sequence_length: 64
+  checkpoint_frequency: 50
